@@ -1,0 +1,16 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+      relative: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/alacritty/alacritty.yml: 'alacritty/alacritty.yml'
+    ~/.tool-versions: 'asdf/tool-versions'
+    ~/.gitconfig: 'git/gitconfig'
+    ~/.gitignore_global: 'git/gitignore_global'
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
