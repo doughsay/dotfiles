@@ -11,6 +11,8 @@
     ~/.tool-versions: 'asdf/tool-versions'
     ~/.gitconfig: 'git/gitconfig'
     ~/.gitignore_global: 'git/gitignore_global'
+    ~/.config/omf/init.fish: 'fish/init.fish'
+    ~/.config/fish/functions/git.fish: 'fish/functions/git.fish'
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
