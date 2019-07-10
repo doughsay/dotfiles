@@ -1,0 +1,12 @@
+[user]
+	email = chris.dose@gmail.com
+	name = Chris Dosé
+	signingkey = EBC21BB0917E9807
+[core]
+	excludesfile = ~/.gitignore_global
+[commit]
+	gpgsign = false
+[alias]
+	up = "!git remote update -p; git merge --ff-only @{u}"
+	mup = "!git checkout master; git up"
+	u="!git merge --ff-only @{u}"
