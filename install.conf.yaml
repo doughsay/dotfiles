@@ -16,3 +16,12 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+
+- pacman:
+  - fish
+  - hub
+
+- shell:
+  - [fish .install/omf.fish, Installing oh-my-fish]
+  - [fish .install/omf-plugins.fish, Installing oh-my-fish plugins]
+  - [sudo chsh -s /usr/bin/fish $USER, Changing shell to Fish]
