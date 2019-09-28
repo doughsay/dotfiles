@@ -2,6 +2,8 @@
 	email = chris.dose@gmail.com
 	name = Chris Dosé
 	signingkey = EBC21BB0917E9807
+[push]
+	default = current
 [core]
 	excludesfile = ~/.gitignore_global
 [commit]
