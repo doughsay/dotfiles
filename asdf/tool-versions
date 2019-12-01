@@ -1,5 +1,5 @@
-elixir 1.9.1-otp-22 
-erlang 22.0.7
+elixir 1.9.4-otp-22
+erlang 22.1.8
 ruby 2.6.3
 crystal 0.29.0
-nodejs 12.9.1
+nodejs 13.2.0
