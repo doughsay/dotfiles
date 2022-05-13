@@ -2,3 +2,4 @@
 .ignore
 .tool-versions-e
 .elixir_ls
+node_modules
