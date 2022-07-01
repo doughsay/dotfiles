@@ -1,14 +1,14 @@
 [user]
 	email = chris.dose@gmail.com
 	name = Chris Dosé
-	signingkey = EBC21BB0917E9807
+	signingkey = 17878A992E051396
 [push]
 	default = current
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = code --wait
 [commit]
-	gpgsign = false
+	gpgsign = true
 [alias]
 	up = "!git remote update -p; git merge --ff-only @{u}"
 	mup = "!git checkout master; git up"

@@ -4,24 +4,18 @@
       create: true
       relative: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
-    ~/.config/alacritty/alacritty.yml: 'alacritty/alacritty.yml'
-    ~/.tool-versions: 'asdf/tool-versions'
-    ~/.gitconfig: 'git/gitconfig'
-    ~/.gitignore_global: 'git/gitignore_global'
-    ~/.config/omf/init.fish: 'fish/init.fish'
-    ~/.config/fish/functions/git.fish: 'fish/functions/git.fish'
+    ~/.config/alacritty/alacritty.yml: "alacritty/alacritty.yml"
+    ~/.tool-versions: "asdf/tool-versions"
+    ~/.gitconfig: "git/gitconfig"
+    ~/.gitignore_global: "git/gitignore_global"
+    ~/.config/omf/init.fish: "fish/init.fish"
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-
-- pacman:
-  - fish
-  - hub
+    - [git submodule update --init --recursive, Installing submodules]
 
 - shell:
-  - [fish .install/omf.fish, Installing oh-my-fish]
-  - [fish .install/omf-plugins.fish, Installing oh-my-fish plugins]
-  - [sudo chsh -s /usr/bin/fish $USER, Changing shell to Fish]
+    - [fish .install/omf.fish, Installing oh-my-fish]
+    - [fish .install/omf-plugins.fish, Installing oh-my-fish plugins]

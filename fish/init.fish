@@ -14,8 +14,10 @@ set -gx PATH \
     $ANDROID_HOME/platform-tools \
     $PATH
 
+set -gx GPG_TTY (tty)
+
 # set abbreviations
-abbr -a -U -- cat bat
+abbr -a -U -- cat batcat
 abbr -a -U -- df duf
 abbr -a -U -- dockerup 'sudo systemctl start docker'
 abbr -a -U -- du ncdu
